@@ -1,0 +1,25 @@
+// 将设置放入此文件中以覆盖默认设置
+{
+  "eslint.autoFixOnSave": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.snippetSuggestions": "top",
+  "html.format.indentHandlebars": true,
+  "editor.detectIndentation": false,
+  "scss.lint.zeroUnits": "error",
+  "beautify.language": {
+    "html": {
+      "ext": ["htm", "html"]
+    },
+    // "html": ["htm", "html", "nunjucks"],
+    "css": ["css", "scss"],
+    "js": {
+      "type": ["javascript", "json"],
+      "filename": [".jsbeautifyrc", ".jshintrc"],
+      "ext": ["js", "json"]
+    }
+  },
+  "files.associations": {
+    "*.html": "nunjucks"
+  }
+}

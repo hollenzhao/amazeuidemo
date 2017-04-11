@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="renderer" content="webkit" />
+  <title>后台Demo</title>
+  <link rel="stylesheet" href="/npm/amazeui/dist/css/amazeui.min.css">
+  <link rel="stylesheet" href="/static/style/common.css">
+</head>
+
+<body>
+  <header class="am-topbar am-topbar-inverse admin-header">
+    <div class="am-topbar-brand">
+      <a href="/">
+        <strong>xxx</strong> <small>管理系统</small>
+      </a>
+    </div>
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}">
+      <span class="am-sr-only">导航切换</span>
+      <span class="am-icon-bars"></span>
+    </button>
+    <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+      <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
+        <li class="am-dropdown" data-am-dropdown>
+          <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+            <span class="am-icon-user"></span>
+            <span class="icon-title">管理员(admin)
+            </span>
+            <span class="am-icon-caret-down"></span>
+          </a>
+          <ul class="am-dropdown-content">
+            <li><a href="javascript:alert('暂未实现');"><span class="am-icon-key"></span><span> 修改密码</span></a></li>
+            <li><a href="#"><span class="am-icon-power-off"></span><span> 退出</span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="am-cf admin-main">
+    <!-- sidebar start -->
+    <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
+      <div class="am-offcanvas-bar admin-offcanvas-bar">
+        <ul class="am-list admin-sidebar-list">
+          <li><a href="http://www.baidu.com"><span class="am-icon-home"></span><span class="icon-title">首页</span></a></li>
+          <li class="admin-parent">
+            <a class="am-cf" data-am-collapse="{target: '#main_menu_1'}"><span class="am-icon-tripadvisor"></span><span class="icon-title">系统</span><span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+            <ul class="am-list admin-sidebar-sub am-collapse am-in" id="main_menu_1">
+              <li><a href="/tabledemo" class="am-cf"><span class="am-icon-cube"></span><span class="icon-title">表格</span></a></li>
+              <li><a href="http://www.baidu.com" class="am-cf"><span class="am-icon-cubes"></span><span class="icon-title">功能组管理</span></a></li>
+              <li><a href="http://www.baidu.com" class="am-cf"><span class="am-icon-th-list"></span><span class="icon-title">菜单管理</span></a></li>
+              <li><a href="http://www.baidu.com" class="am-cf"><span class="am-icon-user"></span><span class="icon-title">后台用户管理</span></a></li>
+            </ul>
+          </li>
+          <li class="admin-parent">
+            <a class="am-cf" data-am-collapse="{target: '#main_menu_6'}"><span class="am-icon-leanpub"></span><span class="icon-title">SEO</span><span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+            <ul class="am-list am-collapse admin-sidebar-sub am-in" id="main_menu_6">
+              <li><a href="http://www.baidu.com" class="am-cf"><span class="am-icon-child"></span><span class="icon-title">baidu</span></a></li>
+              <li><a href="http://www.qq.com" class="am-cf"><span class="am-icon-child"></span><span class="icon-title">QQ</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- sidebar end -->
+
+    <!-- content start -->
+    <div class="admin-content">
+      <div class="admin-content-body">
+        <iframe id="mainframe" name="mainframe" width="100%" height="100%">
+        </iframe>
+      </div>
+      {#
+      <footer class="admin-content-footer">
+        <hr>
+        <p class="am-padding-left">Copyright (C) 2017 xxx. All rights reserved.</p>
+      </footer>#}
+    </div>
+    <!-- content end -->
+  </div>
+
+  <a href="javascript:;" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"></a>
+  <script src="/npm/jquery/dist/jquery.min.js"></script>
+  <script src="/npm/amazeui/dist/js/amazeui.min.js"></script>
+  <script src="/static/script/page/index.js"></script>
+</body>
+
+</html>

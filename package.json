@@ -1,0 +1,41 @@
+{
+  "name": "amazeuidemo",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hollenzhao/amazeuidemo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hollenzhao/amazeuidemo/issues"
+  },
+  "homepage": "https://github.com/hollenzhao/amazeuidemo#readme",
+  "dependencies": {
+    "amazeui": "^2.7.2",
+    "amazeui-datatables": "0.0.6",
+    "datatables.net-dt": "^1.10.13",
+    "datatables.net-fixedcolumns": "^3.2.2",
+    "datatables.net-fixedcolumns-dt": "^3.2.2",
+    "jquery": "^2.2.4",
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-mount": "^3.0.0",
+    "koa-router": "^7.1.1",
+    "koa-static": "^3.0.0",
+    "koa-views": "^6.0.1",
+    "nunjucks": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
