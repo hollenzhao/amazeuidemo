@@ -1,0 +1,59 @@
+{
+  // Use IntelliSense to learn about possible Node.js debug attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [{
+      "name": "启动当前文件",
+      "type": "node",
+      "request": "launch",
+      "program": "${file}",
+      "cwd": "${workspaceRoot}"
+    },
+    {
+      "name": "启动web",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceRoot}/app.js",
+      "cwd": "${workspaceRoot}"
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "附加到进程",
+      "port": 5858
+    },
+    {
+      "name": "gulp js",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceRoot}/node_modules/gulp/bin/gulp.js",
+      "cwd": "${workspaceRoot}",
+      "args": [
+        "js"
+      ]
+    },
+    {
+      "name": "gulp test",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceRoot}/node_modules/gulp/bin/gulp.js",
+      "cwd": "${workspaceRoot}",
+      "args": [
+        "test"
+      ]
+    },
+    {
+      "name": "mocha",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+      "stopOnEntry": false,
+      "cwd": "${workspaceRoot}",
+      "runtimeExecutable": null,
+      "args": [
+        "--no-timeouts", "--colors"
+      ]
+    }
+  ]
+}
