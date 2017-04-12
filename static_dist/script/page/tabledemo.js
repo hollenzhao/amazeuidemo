@@ -7,7 +7,8 @@ $(function() {
     pagingType: 'full_numbers',
     iDisplayLength: 5,
     bServerSide: true,
-    'columns': [{
+    dom: '<"top"i>rt<"bottom"flp><"clear">',
+    columns: [{
       'data': 'id'
     }, {
       'data': 'name'
